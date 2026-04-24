@@ -10,6 +10,14 @@ app.get("/status", (req, res) => {
   });
 });
 
+app.get("/greet", (req, res) => {
+  const name = req.query.name || "User";
+
+  res.json({
+    message: `Hello ${name}, welcome to CI/CD pipeline (DEV)`
+  });
+});
+
 app.get("/", (req, res) => {
   res.send("Hello, From CI/CD Pipeline!");
 });
