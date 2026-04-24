@@ -14,7 +14,7 @@ app.get("/greet", (req, res) => {
   const name = req.query.name || "User";
 
   res.json({
-    message: `Hello ${name}, welcome to CI/CD pipeline (DEV)`
+    message: `Hello ${name}, welcome to CI/CD pipeline (STAGING)`
   });
 });
 
