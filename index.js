@@ -2,7 +2,7 @@ const express = require('express');
 
 const app = express();
 
-
+console.log('Dev Version');
 app.get('/', (req, res) => {
   res.send('Hello, From CI/CD Pipeline!');
 });
